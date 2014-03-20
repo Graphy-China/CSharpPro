@@ -9,6 +9,7 @@ namespace ProCSharp36.Data
 {
     class Book : INotifyPropertyChanged
     {
+	// Tedts
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string title;
