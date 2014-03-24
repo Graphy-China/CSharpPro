@@ -4,3 +4,5 @@
  */
 
   added in issue 35
+
+  This is the fixing of issue 37
