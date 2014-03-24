@@ -5,4 +5,10 @@
 
   added in issue 35
   master fixing.
+  Insert fixing issue 41
   This is the fixing of issue 37
+ 
+  void* createMemoryNode( size_t size)
+  {
+	fixing issue 41;
+  }
