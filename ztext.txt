@@ -5,4 +5,9 @@
 
   added in issue 35
   master fixing.
+  insert issue 40.
   This is the fixing of issue 37
+
+  function { 
+  	   This is the fixing of issue40;
+  }
