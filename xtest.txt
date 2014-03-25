@@ -11,5 +11,6 @@
   This is the fixing on issue 91.v2.1
   
   ===================================
-  Following is work on teamone
+  Following is work on AirPrint
+  Member 2
   
