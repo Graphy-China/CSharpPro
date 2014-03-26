@@ -20,4 +20,7 @@
 
  =================================
  work on AirPrint: member 1
- 
+ =================================
+ Work on issue 02.
+ Work on issue 02. Day1
+ Work on issue 02. Day2
