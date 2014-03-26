@@ -18,4 +18,15 @@
 	fixing issue 41;
   }
   
+  ================================
+  work on issue 03.
+  
+  int Add (int x, int y)
+  { 
+    return x+y;
+  }
 
+  int Sub (int x, int y)
+  {
+    return x-y;
+  }
