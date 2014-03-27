@@ -48,6 +48,20 @@ namespace ProCSharp36.Data
             }
         }
 
+        private static RoutedUICommand showAll;
+        public static ICommand ShowAll
+        {
+            get
+            {
+                if (showAll == null)
+                {
+                    showAll = new RoutedUICommand("Show All", "ShowAll", typeof(BooksCommands));
+                }
+                return showAuthors;
+            }
+        }
+
+
     }
 
 }
