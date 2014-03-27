@@ -65,6 +65,11 @@ namespace ProCSharp36
 
             return book;
         }
+
+	private void ShowIDString()
+	{
+		//empty.
+	}
     }
     // A test fot this one@!
 }
