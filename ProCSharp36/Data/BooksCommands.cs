@@ -48,6 +48,9 @@ namespace ProCSharp36.Data
             }
         }
 
+       	public string commandString = "xxxxxxx";
+	private string IDString = "IDString";
+
         private static RoutedUICommand showAll;
         public static ICommand ShowAll
         {

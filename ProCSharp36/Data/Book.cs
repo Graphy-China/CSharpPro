@@ -99,7 +99,10 @@ namespace ProCSharp36.Data
             this.isbn = "unknown";
         }
 
-
+	public string IDString()
+	{
+	    return "IDString";
+	}
         
     }
 }
