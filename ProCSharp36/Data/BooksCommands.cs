@@ -57,7 +57,7 @@ namespace ProCSharp36.Data
                 {
                     showAll = new RoutedUICommand("Show All", "ShowAll", typeof(BooksCommands));
                 }
-		// comment by John
+		// comment by John. Verified By Jessica.
                 return showAuthors;
             }
         }
