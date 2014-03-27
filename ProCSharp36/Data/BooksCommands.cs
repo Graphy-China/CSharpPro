@@ -49,6 +49,7 @@ namespace ProCSharp36.Data
         }
 
 	public string commandString = "xxxxxxx";
+	private string IDString = "IDString";
     }
 
 }
