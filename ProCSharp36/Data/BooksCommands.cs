@@ -48,6 +48,7 @@ namespace ProCSharp36.Data
             }
         }
 
+	public string commandString = "xxxxxxx";
     }
 
 }
