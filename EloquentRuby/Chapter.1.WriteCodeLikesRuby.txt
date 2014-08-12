@@ -1,0 +1,86 @@
+
+#=========================================================================
+#Comments:
+
+1. Good Ruby code should speak for itself.
+2. Add comments to explain: 
+   2.1 backgroud of the software.
+   2.2 explain "how to use" your software masterpiece.                                    
+
+  #-------------------------------------------------------------------------
+  # Author: Riss Olsen
+  # Copyright 2010 Russ Olsen
+  #
+  # Class that models a plain text document, complete with title and author:
+  # 
+  # doc = Document.new('Hamlet', 'Sharkspare', 'To be or....')
+  #
+  # puts doc.title
+  # puts doc.author
+  # puts doc.content
+  #
+  # Document instances know how to parse their content into words:
+  #  
+  # puts doc.words
+  # puts doc.word_count
+  #
+
+#=========================================================================
+# Naming:
+1. All: lowercase_words_seperated_by_underscores
+2. Exception 1 - class: Camel. 
+3. Exception 2 - constant: ALL_UPPERCASE.
+
+  #-------------------------------------------------------------------------
+
+class CircleWithColor
+  MATH_PIT = 3.1415926
+  
+  def intersect_with?( this_segment)
+     #......    
+  end
+
+end
+
+#=========================================================================
+# Parentheses:
+1. Leave parentheses off in  Conditions in control statements.
+2. Use parentheses when use function call.
+3. dispense parentheses when calling a method that is familiar, stands alone on its own line.
+4. Leave parentheses off when calling a method with no parameters.
+
+class CircleWithColor
+  MATH_PIT = 3.1415926
+
+  def intersect_with?( this_segment)
+     #......    
+  end
+  
+  def area
+     if diameter > 0
+       # ....
+     end
+  end
+
+end
+
+circle = CircleWithColor
+circle.intersect_with?( this_segment )
+puts circle.area
+
+#=========================================================================
+# Fold up:
+
+1. Fold up empty class or method
+2. Fold up blocks: block is one command.
+  
+class DocumentException < Exception; end
+def method_to_be_overriden; end
+
+10.times {|n| puts "The number is #{n}"}
+10.times do |n|
+  puts  "The number is #{n}"
+  puts  "Twice of the number is #{n*2}"
+end
+
+
