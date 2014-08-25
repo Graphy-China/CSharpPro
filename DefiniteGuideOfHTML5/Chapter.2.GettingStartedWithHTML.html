@@ -33,6 +33,20 @@ html entities: some special characters in HTML document.
 === section 2 ===
 Global Attributes:
 
+1. accesskey
+2. class
+3. contenteditable
+4. contextmenu
+5. dir
+6. draggable
+7. dropzone
+8. hidden
+9. id
+10. lang
+11. spellcheck
+12. style
+13. tabindex
+14. title
 
 -->
 <html>
@@ -41,13 +55,34 @@ Global Attributes:
 		<title>Chapter.3.Getting Start With HTML5 </title>
     <!-- define relationships to external resources (such as CSS stylesheets), 
          define inline CSS styles, and define and load scripts -->
-    <style>
+    <style type="text/css">
 			.link {
 			   border: 2px sloid #f00;
          margin: 10px 5px 0 0;y
       }
-    </style>
 
+			.class2 {
+			    background-color: grey;
+			    color: white;
+			    padding: 5px;
+          margin:  2px;
+			}
+			.class1 {
+			    font-size: x-large;
+			}
+			
+    </style>
+    <script type="text/javascript">
+
+			var toggleHidden = function() { 
+					var elem = document.getElementById("toggle");
+					if (elem.hasAttribute("hidden"))
+							elem.removeAttribute("hidden");
+					else
+							elem.setAttribute("hidden", "hidden");
+			}
+
+    </script>
   </head>
 	<body>
 		I like <code> Apples </code> and oranges.
@@ -59,6 +94,40 @@ Global Attributes:
 		<hr/>
 		My favorite book: <input id="favorite-book" content="xyz" data-author="Syu"   data-title="CustomBook"/>
 		<hr/>
+     
+    <form>
+			Name: <input type="text" name="name" accesskey="n"/> <p/>
+			Password: <input type="password" name="password" accesskey="p"/> <p/>
+		  <input type="submit" value="Log In" accesskey="s"/>
+
+    </form>
+    <hr/>
+		<a class="class1 class2"  href="http://apress.com "> Apress web site </a>  <p/>
+		<a class="class2 otherclass"  href="http://w3c.org"> W3C web site </a>
+		
+    <script type="text/javascript">
+			var elems = document.getElementsByClassName("otherclass");
+      for (i=0; i<elems.length; i++) {
+					//var e = elems[i];
+					//var thisstyle = elems[i].style;
+					e.style.border = "thin solid black";
+					e.style.backgroundColor = "white";
+					e.style.color = "red";
+			}
+		</script>
+    <hr/>
+		  <p contenteditable="true"> It is rainning right now! </p>
+  		<a class="class2 otherclass " contenteditable="true" href="http://w3c.org"> W3C web site </a>
+    <hr/>
+
+    <button onclick="toggleHidden()"> Toggle</button>
+		<table>
+		  <tr><th>Name</th><th>City</th> </tr>
+		  <tr><td>Adam</td><td>London</td> </tr>
+		  <tr id="toggle" hidden ><td>John Smiss</td><td>New York</td> </tr>
+		  <tr title="Tool tips" ><td>Anne Joes</td><td>Paris</td> </tr>
+
+		</table>
 
 	</body>
 <html>
