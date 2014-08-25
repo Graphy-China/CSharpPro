@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+Chapter.3. Getting start with HTML
+
+=== section 1 ===
+tags:    
+1. code:  the content is a program
+2. hr:    void element. a separation of paragraph. usage: <hr/>
+3. a:     link object. Local attr: href="http://www.apple.com.cn"
+4. input: an input area. can be disabled by "disabled" attributes.
+
+attrs:
+
+id:       global attribute
+class:    global attribute
+href:     local  attribute
+disabled: local  blloean attribute
+data-*  : custom attribute.
+
+element types:
+
+1. metadata element: 
+2. flow element:     
+3. phrasing element: 
+
+html entities: some special characters in HTML document.
+
+<      &lt             &#60
+>      &gt             &#62
+&      &amp            &#30
+...
+
+=== section 2 ===
+Global Attributes:
+
+
+-->
+<html>
+	<head>
+    <!-- Elements that describes the Document  -->
+		<title>Chapter.3.Getting Start With HTML5 </title>
+    <!-- define relationships to external resources (such as CSS stylesheets), 
+         define inline CSS styles, and define and load scripts -->
+    <style>
+			.link {
+			   border: 2px sloid #f00;
+         margin: 10px 5px 0 0;y
+      }
+    </style>
+
+  </head>
+	<body>
+		I like <code> Apples </code> and oranges.
+		<hr/>
+		<a class="link" id="firstlink" href="http://www.apple.com.cn "> Apple Website </a>
+		<hr/>
+		<p> Enter your favorite fruit: <input />  </p>
+		<p> Enter your favorite fruit: <input disabled="disabled"/>  </p>
+		<hr/>
+		My favorite book: <input id="favorite-book" content="xyz" data-author="Syu"   data-title="CustomBook"/>
+		<hr/>
+
+	</body>
+<html>
