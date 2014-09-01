@@ -58,7 +58,7 @@ Global Attributes:
     <style type="text/css">
 			.link {
 			   border: 2px sloid #f00;
-         margin: 10px 5px 0 0;y
+         margin: 10px 5px 0 0;
       }
 
 			.class2 {
@@ -92,7 +92,7 @@ Global Attributes:
 		<p> Enter your favorite fruit: <input />  </p>
 		<p> Enter your favorite fruit: <input disabled="disabled"/>  </p>
 		<hr/>
-		My favorite book: <input id="favorite-book" content="xyz" data-author="Syu"   data-title="CustomBook"/>
+		My favorite book: <input id="favorite-book" data-content="xyz" data-author="Syu"   data-title="CustomBook"/>
 		<hr/>
      
     <form>
@@ -108,7 +108,7 @@ Global Attributes:
     <script type="text/javascript">
 			var elems = document.getElementsByClassName("otherclass");
       for (i=0; i<elems.length; i++) {
-					//var e = elems[i];
+					var e = elems[i];
 					//var thisstyle = elems[i].style;
 					e.style.border = "thin solid black";
 					e.style.backgroundColor = "white";
